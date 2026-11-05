@@ -1,0 +1,294 @@
+{
+ "203.0.113.10": {
+  "asn": "AS64500",
+  "as_name": "DEMO-NET Demo Network Operator",
+  "prefix": "203.0.113.0/24",
+  "country": "Nigeria",
+  "country_code": "NG",
+  "region": "Lagos",
+  "city": "Lagos",
+  "lat": 6.5244,
+  "lon": 3.3792,
+  "ptr": "www.demo-corp.example",
+  "rdap": {
+   "name": "DEMO-NET-NG",
+   "handle": "NET-203-0-113-0-1",
+   "country": "NG",
+   "startAddress": "203.0.113.0",
+   "endAddress": "203.0.113.255",
+   "cidr0_cidrs": [
+    {
+     "v4prefix": "203.0.113.0",
+     "length": 24
+    }
+   ],
+   "entities": [
+    {
+     "roles": [
+      "registrant"
+     ],
+     "vcardArray": [
+      "vcard",
+      [
+       [
+        "version",
+        {},
+        "text",
+        "4.0"
+       ],
+       [
+        "fn",
+        {},
+        "text",
+        "Demo Network Operator"
+       ]
+      ]
+     ]
+    }
+   ],
+   "events": [
+    {
+     "eventAction": "registration",
+     "eventDate": "2010-01-01T00:00:00Z"
+    },
+    {
+     "eventAction": "last changed",
+     "eventDate": "2025-03-01T00:00:00Z"
+    }
+   ]
+  }
+ },
+ "203.0.113.44": {
+  "asn": "AS64500",
+  "as_name": "DEMO-NET Demo Network Operator",
+  "prefix": "203.0.113.0/24",
+  "country": "Kenya",
+  "country_code": "KE",
+  "region": "Nairobi",
+  "city": "Nairobi",
+  "lat": -1.2921,
+  "lon": 36.8219,
+  "rdap": {
+   "name": "DEMO-NET-NG",
+   "handle": "NET-203-0-113-0-1",
+   "country": "NG",
+   "startAddress": "203.0.113.0",
+   "endAddress": "203.0.113.255",
+   "cidr0_cidrs": [
+    {
+     "v4prefix": "203.0.113.0",
+     "length": 24
+    }
+   ],
+   "entities": [
+    {
+     "roles": [
+      "registrant"
+     ],
+     "vcardArray": [
+      "vcard",
+      [
+       [
+        "version",
+        {},
+        "text",
+        "4.0"
+       ],
+       [
+        "fn",
+        {},
+        "text",
+        "Demo Network Operator"
+       ]
+      ]
+     ]
+    }
+   ],
+   "events": [
+    {
+     "eventAction": "registration",
+     "eventDate": "2010-01-01T00:00:00Z"
+    },
+    {
+     "eventAction": "last changed",
+     "eventDate": "2025-03-01T00:00:00Z"
+    }
+   ]
+  }
+ },
+ "198.51.100.25": {
+  "asn": "AS64501",
+  "as_name": "DEMO-MAIL Demo Mail Hosting",
+  "prefix": "198.51.100.0/24",
+  "country": "United Kingdom",
+  "country_code": "GB",
+  "region": "England",
+  "city": "London",
+  "lat": 51.5072,
+  "lon": -0.1276,
+  "ptr": "mail.demo-corp.example",
+  "rdap": {
+   "name": "DEMO-MAIL-GB",
+   "handle": "NET-198-51-100-0-1",
+   "country": "GB",
+   "startAddress": "198.51.100.0",
+   "endAddress": "198.51.100.255",
+   "cidr0_cidrs": [
+    {
+     "v4prefix": "198.51.100.0",
+     "length": 24
+    }
+   ],
+   "entities": [
+    {
+     "roles": [
+      "registrant"
+     ],
+     "vcardArray": [
+      "vcard",
+      [
+       [
+        "version",
+        {},
+        "text",
+        "4.0"
+       ],
+       [
+        "fn",
+        {},
+        "text",
+        "Demo Mail Hosting Ltd"
+       ]
+      ]
+     ]
+    }
+   ],
+   "events": [
+    {
+     "eventAction": "registration",
+     "eventDate": "2010-01-01T00:00:00Z"
+    },
+    {
+     "eventAction": "last changed",
+     "eventDate": "2025-03-01T00:00:00Z"
+    }
+   ]
+  }
+ },
+ "198.51.100.77": {
+  "asn": "AS64501",
+  "as_name": "DEMO-MAIL Demo Mail Hosting",
+  "prefix": "198.51.100.0/24",
+  "country": "Singapore",
+  "country_code": "SG",
+  "region": "Singapore",
+  "city": "Singapore",
+  "lat": 1.3521,
+  "lon": 103.8198,
+  "rdap": {
+   "name": "DEMO-MAIL-GB",
+   "handle": "NET-198-51-100-0-1",
+   "country": "GB",
+   "startAddress": "198.51.100.0",
+   "endAddress": "198.51.100.255",
+   "cidr0_cidrs": [
+    {
+     "v4prefix": "198.51.100.0",
+     "length": 24
+    }
+   ],
+   "entities": [
+    {
+     "roles": [
+      "registrant"
+     ],
+     "vcardArray": [
+      "vcard",
+      [
+       [
+        "version",
+        {},
+        "text",
+        "4.0"
+       ],
+       [
+        "fn",
+        {},
+        "text",
+        "Demo Mail Hosting Ltd"
+       ]
+      ]
+     ]
+    }
+   ],
+   "events": [
+    {
+     "eventAction": "registration",
+     "eventDate": "2010-01-01T00:00:00Z"
+    },
+    {
+     "eventAction": "last changed",
+     "eventDate": "2025-03-01T00:00:00Z"
+    }
+   ]
+  }
+ },
+ "192.0.2.50": {
+  "asn": "AS64502",
+  "as_name": "DEMO-SEC Demo Secure Hosting",
+  "prefix": "192.0.2.0/24",
+  "country": "Germany",
+  "country_code": "DE",
+  "region": "Hesse",
+  "city": "Frankfurt",
+  "lat": 50.1109,
+  "lon": 8.6821,
+  "rdap": {
+   "name": "DEMO-SEC-DE",
+   "handle": "NET-192-0-2-0-1",
+   "country": "DE",
+   "startAddress": "192.0.2.0",
+   "endAddress": "192.0.2.255",
+   "cidr0_cidrs": [
+    {
+     "v4prefix": "192.0.2.0",
+     "length": 24
+    }
+   ],
+   "entities": [
+    {
+     "roles": [
+      "registrant"
+     ],
+     "vcardArray": [
+      "vcard",
+      [
+       [
+        "version",
+        {},
+        "text",
+        "4.0"
+       ],
+       [
+        "fn",
+        {},
+        "text",
+        "Demo Secure Hosting GmbH"
+       ]
+      ]
+     ]
+    }
+   ],
+   "events": [
+    {
+     "eventAction": "registration",
+     "eventDate": "2010-01-01T00:00:00Z"
+    },
+    {
+     "eventAction": "last changed",
+     "eventDate": "2025-03-01T00:00:00Z"
+    }
+   ]
+  }
+ }
+}

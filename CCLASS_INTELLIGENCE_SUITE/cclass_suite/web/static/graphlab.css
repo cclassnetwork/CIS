@@ -1,0 +1,51 @@
+/* CCLASS Graph Lab - layout and canvas chrome. Colour tokens come from cclass.css. */
+.gl-body{height:100vh;overflow:hidden;display:flex;flex-direction:column}
+.gl-top{display:flex;align-items:center;gap:6px;padding:8px 12px;background:#08111f;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.gl-top .btn,.gl-top .form-select,.gl-top .form-control{white-space:nowrap}
+.gl-brand{display:flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none;margin-right:6px}
+.gl-brand small{color:var(--mute);letter-spacing:.06em}
+.gl-sep{width:1px;height:24px;background:var(--line);margin:0 2px}
+.gl-grow{flex:1}
+.gl-w-graph{width:170px}.gl-w-layout{width:112px}
+.gl-quick{display:flex;gap:6px;min-width:200px;flex:1 1 300px}
+.gl-user{color:var(--mute)}
+.gl-main{flex:1;display:grid;grid-template-columns:190px 1fr 330px;min-height:0}
+.gl-left,.gl-right{background:#0a1526;padding:10px;overflow-y:auto}
+.gl-left{border-right:1px solid var(--line)}.gl-right{border-left:1px solid var(--line);padding:0}
+.gl-h{font-size:.7rem;text-transform:uppercase;letter-spacing:.09em;color:var(--mute);margin-bottom:6px}
+.gl-hint{font-size:.72rem;color:var(--mute);margin-bottom:8px}
+.gl-pal{display:flex;align-items:center;gap:8px;padding:5px 8px;margin-bottom:4px;border:1px solid var(--line);border-radius:6px;background:#0d1d38;cursor:grab;font-size:.84rem;user-select:none}
+.gl-pal:hover{border-color:var(--accent);background:#102446}
+.gl-dot{width:12px;height:12px;border-radius:50%;flex:none}
+.gl-zoom{display:flex;gap:4px;margin-top:6px}
+.gl-canvas-wrap{position:relative;min-width:0;background:#060f1e}
+#gl-cy{position:absolute;inset:0;outline:none}
+.gl-empty{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:var(--mute);pointer-events:none;padding:30px}
+.gl-empty h5{color:var(--ink)}
+.gl-status{position:absolute;left:0;right:0;bottom:0;display:flex;gap:18px;padding:4px 12px;font-size:.74rem;color:var(--mute);background:rgba(8,17,31,.85);border-top:1px solid var(--line)}
+.gl-ctx{position:absolute;z-index:20;min-width:250px;max-width:340px;background:#0c1b34;border:1px solid var(--accent);border-radius:8px;padding:6px;box-shadow:0 10px 30px rgba(0,0,0,.5);max-height:70vh;overflow-y:auto}
+.gl-ctx .grp{font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);padding:6px 8px 2px}
+.gl-ctx button{display:block;width:100%;text-align:left;background:none;border:0;color:var(--ink);padding:5px 8px;border-radius:5px;font-size:.84rem}
+.gl-ctx button:hover{background:var(--accent)}
+.gl-ctx button small{display:block;color:var(--mute);font-size:.7rem}
+.gl-ctx button:hover small{color:#dbe7ff}
+.gl-ctx hr{border-color:var(--line);margin:4px 0}
+.gl-tabs{display:flex;list-style:none;margin:0;padding:0;border-bottom:1px solid var(--line);background:#0c1b34}
+.gl-tabs li{flex:1;text-align:center;padding:8px 4px;font-size:.8rem;color:var(--mute);cursor:pointer;border-bottom:2px solid transparent}
+.gl-tabs li.on{color:var(--ink);border-bottom-color:var(--accent)}
+#gl-pane{padding:12px}
+.gl-badge{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;padding:2px 9px;border-radius:12px;background:#10244a;border:1px solid var(--line)}
+.gl-val{font-family:ui-monospace,Menlo,Consolas,monospace;color:#9cc3ff;word-break:break-all;font-size:.9rem;margin:8px 0}
+.gl-tr{display:block;width:100%;text-align:left;margin-bottom:5px;padding:6px 9px;border:1px solid var(--line);border-radius:6px;background:#0d1d38;color:var(--ink);font-size:.82rem}
+.gl-tr:hover{border-color:var(--accent);background:#102a55}
+.gl-tr small{display:block;color:var(--mute);font-size:.7rem}
+.gl-tr.local{border-left:3px solid #10b981}.gl-tr.module{border-left:3px solid #3b82f6}
+.gl-run{font-size:.78rem;border-bottom:1px solid var(--line);padding:6px 0}
+.gl-run .err{color:#f87171}
+.gl-modal{position:fixed;inset:0;background:rgba(2,8,20,.7);display:grid;place-items:center;z-index:50}
+.gl-modal-box{background:#0c1b34;border:1px solid var(--accent);border-radius:10px;padding:18px;width:min(420px,92vw)}
+.gl-modal-box h6{margin-bottom:12px}
+#toast-area{position:fixed;top:auto;left:auto;right:14px;bottom:34px;width:340px;z-index:60;pointer-events:none}
+#toast-area .alert{pointer-events:auto}
+@media (max-width:1100px){.gl-main{grid-template-columns:150px 1fr 270px}.gl-w-graph{width:150px}}
+@media (max-width:760px){.gl-main{grid-template-columns:1fr;grid-template-rows:auto 1fr auto}.gl-left{display:none}.gl-right{max-height:34vh}}

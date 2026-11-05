@@ -1,0 +1,36 @@
+{
+ "demo-corp.example": [
+  {
+   "name_value": "demo-corp.example\nwww.demo-corp.example",
+   "issuer_name": "C=US, O=Let's Encrypt, CN=R11",
+   "not_before": "2026-08-01T00:00:00",
+   "not_after": "2026-10-30T00:00:00"
+  },
+  {
+   "name_value": "mail.demo-corp.example",
+   "issuer_name": "C=US, O=Let's Encrypt, CN=R11",
+   "not_before": "2026-08-05T00:00:00",
+   "not_after": "2026-11-03T00:00:00"
+  },
+  {
+   "name_value": "vpn.demo-corp.example",
+   "issuer_name": "C=US, O=DigiCert Inc, CN=DigiCert TLS RSA SHA256 2020 CA1",
+   "not_before": "2026-03-01T00:00:00",
+   "not_after": "2027-03-01T00:00:00"
+  },
+  {
+   "name_value": "dev.demo-corp.example\n*.demo-corp.example",
+   "issuer_name": "C=US, O=Let's Encrypt, CN=R11",
+   "not_before": "2026-09-10T00:00:00",
+   "not_after": "2026-12-09T00:00:00"
+  }
+ ],
+ "demo-secure.example": [
+  {
+   "name_value": "demo-secure.example\nwww.demo-secure.example",
+   "issuer_name": "C=US, O=DigiCert Inc, CN=DigiCert TLS RSA SHA256 2020 CA1",
+   "not_before": "2026-01-20T00:00:00",
+   "not_after": "2027-02-20T00:00:00"
+  }
+ ]
+}

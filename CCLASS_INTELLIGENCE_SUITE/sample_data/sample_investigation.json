@@ -1,0 +1,29 @@
+{
+ "name": "DEMO - demo-corp.example infrastructure review",
+ "description": "Offline demonstration investigation built from bundled sample data (reserved documentation domains and IP ranges). Nothing here refers to real organisations.",
+ "queries": [
+  "demo-corp.example",
+  "203.0.113.10",
+  "admin@demo-corp.example",
+  "demo_user",
+  "Lagos"
+ ],
+ "watchlists": [
+  [
+   "keyword",
+   "Citrix"
+  ],
+  [
+   "keyword",
+   "Log4j"
+  ],
+  [
+   "domain",
+   "demo-corp.example"
+  ],
+  [
+   "cve",
+   "CVE-2024-3400"
+  ]
+ ]
+}

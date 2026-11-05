@@ -1,0 +1,20 @@
+{
+ "admin@demo-corp.example": {
+  "displayName": "Demo Admin",
+  "accounts": [
+   {
+    "url": "https://github.com/demo_user",
+    "shortname": "github"
+   },
+   {
+    "url": "https://twitter.com/demo_user",
+    "shortname": "twitter"
+   }
+  ],
+  "urls": [
+   {
+    "value": "https://demo-corp.example/"
+   }
+  ]
+ }
+}

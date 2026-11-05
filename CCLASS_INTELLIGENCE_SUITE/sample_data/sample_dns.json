@@ -1,0 +1,108 @@
+{
+ "demo-corp.example": {
+  "A": [
+   "203.0.113.10"
+  ],
+  "AAAA": [
+   "2001:db8::10"
+  ],
+  "NS": [
+   "ns1.demo-corp.example",
+   "ns2.demo-corp.example"
+  ],
+  "MX": [
+   "10 mail.demo-corp.example",
+   "20 mail2.demo-corp.example"
+  ],
+  "TXT": [
+   "v=spf1 ip4:198.51.100.25 include:_spf.mailhost.example ~all",
+   "site-verification=demo123"
+  ],
+  "CAA": [
+   "0 issue \"letsencrypt.org\""
+  ],
+  "SOA": [
+   "ns1.demo-corp.example hostmaster.demo-corp.example 2026101001 7200 3600 1209600 3600"
+  ]
+ },
+ "www.demo-corp.example": {
+  "A": [
+   "203.0.113.10"
+  ]
+ },
+ "dev.demo-corp.example": {
+  "A": [
+   "203.0.113.10"
+  ]
+ },
+ "vpn.demo-corp.example": {
+  "A": [
+   "203.0.113.44"
+  ]
+ },
+ "mail.demo-corp.example": {
+  "A": [
+   "198.51.100.25"
+  ]
+ },
+ "mail2.demo-corp.example": {
+  "A": [
+   "198.51.100.25"
+  ]
+ },
+ "_dmarc.demo-corp.example": {
+  "TXT": [
+   "v=DMARC1; p=none; rua=mailto:dmarc@demo-corp.example"
+  ]
+ },
+ "google._domainkey.demo-corp.example": {
+  "TXT": []
+ },
+ "ptr:203.0.113.10": {
+  "PTR": [
+   "www.demo-corp.example"
+  ]
+ },
+ "ptr:198.51.100.25": {
+  "PTR": [
+   "mail.demo-corp.example"
+  ]
+ },
+ "demo-secure.example": {
+  "A": [
+   "192.0.2.50"
+  ],
+  "NS": [
+   "ns1.demo-secure.example"
+  ],
+  "MX": [
+   "10 mx.demo-secure.example"
+  ],
+  "TXT": [
+   "v=spf1 include:_spf.demo-secure.example -all"
+  ],
+  "CAA": [
+   "0 issue \"digicert.com\""
+  ]
+ },
+ "_dmarc.demo-secure.example": {
+  "TXT": [
+   "v=DMARC1; p=reject; pct=100; rua=mailto:reports@demo-secure.example"
+  ]
+ },
+ "mx.demo-secure.example": {
+  "A": [
+   "192.0.2.51"
+  ]
+ },
+ "demo-new.example": {
+  "A": [
+   "198.51.100.77"
+  ],
+  "NS": [
+   "ns1.cheap-dns.example"
+  ],
+  "MX": [],
+  "TXT": []
+ }
+}

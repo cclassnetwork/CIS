@@ -1,0 +1,51 @@
+# HTTPS deployment: Caddy terminates TLS (automatic Let's Encrypt certificates for a public
+# name, or its own internal CA for a LAN name) and forwards to the app on a private network.
+#
+#   cp .env.example .env     # set CCLASS_DOMAIN
+#   docker compose up -d --build
+#   docker compose exec cclass python cclass.py users add admin --role admin
+#
+services:
+  cclass:
+    build: .
+    restart: unless-stopped
+    environment:
+      CCLASS_HOME: /data
+      CCLASS_HOST: 0.0.0.0
+      CCLASS_ALLOWED_HOSTS: ${CCLASS_DOMAIN:?set CCLASS_DOMAIN in .env}
+      CCLASS_COOKIE_SECURE: "1"      # session cookie only over HTTPS; sends HSTS
+      CCLASS_TRUST_PROXY: "1"        # real client IP from the proxy (port 8000 is not published)
+      CCLASS_OFFLINE: ${CCLASS_OFFLINE:-0}
+      CCLASS_NVD_API_KEY: ${CCLASS_NVD_API_KEY:-}
+    volumes:
+      - cclass-data:/data
+    expose:
+      - "8000"                       # reachable by other containers only, NOT published to the host
+    networks: [internal]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on: [cclass]
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      CCLASS_DOMAIN: ${CCLASS_DOMAIN}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    networks: [internal]
+
+volumes:
+  cclass-data:
+  caddy-data:
+  caddy-config:
+
+networks:
+  internal:

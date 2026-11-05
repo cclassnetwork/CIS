@@ -1,0 +1,39 @@
+# systemd unit: sudo cp deploy/cclass.service /etc/systemd/system/ && sudo systemctl enable --now cclass
+# Assumes the suite is installed in /opt/cclass (with .venv) and run by a dedicated user:
+#   sudo useradd --system --home /opt/cclass --shell /usr/sbin/nologin cclass
+#   sudo install -d -o cclass -g cclass -m 750 /var/lib/cclass
+[Unit]
+Description=CCLASS Intelligence Suite
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=cclass
+Group=cclass
+WorkingDirectory=/opt/cclass
+Environment=CCLASS_HOME=/var/lib/cclass
+Environment=CCLASS_HOST=127.0.0.1
+Environment=CCLASS_ALLOWED_HOSTS=cclass.example.org
+Environment=CCLASS_COOKIE_SECURE=1
+Environment=CCLASS_TRUST_PROXY=1
+# Secrets (e.g. CCLASS_NVD_API_KEY=...) go in this root-owned file, mode 600:
+EnvironmentFile=-/etc/cclass.env
+ExecStart=/opt/cclass/.venv/bin/python /opt/cclass/cclass.py --dashboard --no-demo-prompt
+Restart=on-failure
+RestartSec=5
+
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/cclass
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+RestrictNamespaces=true
+LockPersonality=true
+SystemCallFilter=@system-service
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+{
+ "demo-corp.example": [
+  "https://twitter.com/democorp",
+  "https://www.linkedin.com/company/demo-corp",
+  "https://github.com/demo-corp",
+  "https://www.facebook.com/democorp",
+  "https://www.instagram.com/democorp",
+  "https://demo-corp.example/about"
+ ]
+}

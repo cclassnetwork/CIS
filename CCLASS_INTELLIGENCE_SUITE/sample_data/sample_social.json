@@ -1,0 +1,36 @@
+{
+ "demo_user": {
+  "GitHub": {
+   "status": "found",
+   "url": "https://github.com/demo_user",
+   "details": {
+    "public_repos": 14,
+    "followers": 23,
+    "created_at": "2019-04-02T00:00:00Z"
+   }
+  },
+  "GitLab": {
+   "status": "not_found",
+   "url": "https://gitlab.com/demo_user"
+  },
+  "Hacker News": {
+   "status": "found",
+   "url": "https://news.ycombinator.com/user?id=demo_user",
+   "details": {
+    "karma": 412
+   }
+  },
+  "Dev.to": {
+   "status": "found",
+   "url": "https://dev.to/demo_user"
+  },
+  "Docker Hub": {
+   "status": "not_found",
+   "url": "https://hub.docker.com/u/demo_user"
+  },
+  "Keybase": {
+   "status": "not_found",
+   "url": "https://keybase.io/demo_user"
+  }
+ }
+}

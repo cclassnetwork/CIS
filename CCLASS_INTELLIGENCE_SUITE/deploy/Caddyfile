@@ -1,0 +1,17 @@
+# Caddy reverse proxy. {$CCLASS_DOMAIN} comes from .env.
+#
+# Public server with a real DNS name: nothing to change - certificates are obtained and renewed
+# automatically (ports 80 and 443 must be reachable from the Internet).
+#
+# Internal/LAN name with no public DNS: uncomment the "tls internal" line. Caddy then issues
+# certificates from its own private CA; install that CA on staff machines (see ADMIN_GUIDE).
+{$CCLASS_DOMAIN} {
+	# tls internal
+	encode zstd gzip
+	request_body {
+		max_size 60MB
+	}
+	reverse_proxy cclass:8000 {
+		header_up X-Forwarded-Proto {scheme}
+	}
+}

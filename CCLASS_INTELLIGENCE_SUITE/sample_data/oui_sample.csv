@@ -1,0 +1,10 @@
+prefix,vendor
+B8:27:EB,Raspberry Pi Foundation
+DC:A6:32,Raspberry Pi Trading
+E4:5F:01,Raspberry Pi Trading
+00:50:56,VMware
+00:0C:29,VMware
+08:00:27,Oracle VirtualBox
+52:54:00,QEMU/KVM virtual NIC
+00:15:5D,Microsoft Hyper-V
+00:16:3E,Xen virtual NIC

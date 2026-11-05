@@ -1,0 +1,152 @@
+{
+ "demo-corp.example": {
+  "ldhName": "DEMO-CORP.EXAMPLE",
+  "status": [
+   "client transfer prohibited"
+  ],
+  "events": [
+   {
+    "eventAction": "registration",
+    "eventDate": "2025-09-20T10:00:00Z"
+   },
+   {
+    "eventAction": "expiration",
+    "eventDate": "2027-09-20T10:00:00Z"
+   },
+   {
+    "eventAction": "last changed",
+    "eventDate": "2026-09-01T00:00:00Z"
+   }
+  ],
+  "entities": [
+   {
+    "roles": [
+     "registrar"
+    ],
+    "vcardArray": [
+     "vcard",
+     [
+      [
+       "version",
+       {},
+       "text",
+       "4.0"
+      ],
+      [
+       "fn",
+       {},
+       "text",
+       "Demo Registrar Ltd"
+      ]
+     ]
+    ]
+   }
+  ],
+  "nameservers": [
+   {
+    "ldhName": "ns1.demo-corp.example"
+   },
+   {
+    "ldhName": "ns2.demo-corp.example"
+   }
+  ]
+ },
+ "demo-secure.example": {
+  "ldhName": "DEMO-SECURE.EXAMPLE",
+  "status": [
+   "client transfer prohibited"
+  ],
+  "events": [
+   {
+    "eventAction": "registration",
+    "eventDate": "2018-02-11T09:30:00Z"
+   },
+   {
+    "eventAction": "expiration",
+    "eventDate": "2027-02-11T09:30:00Z"
+   },
+   {
+    "eventAction": "last changed",
+    "eventDate": "2026-01-15T00:00:00Z"
+   }
+  ],
+  "entities": [
+   {
+    "roles": [
+     "registrar"
+    ],
+    "vcardArray": [
+     "vcard",
+     [
+      [
+       "version",
+       {},
+       "text",
+       "4.0"
+      ],
+      [
+       "fn",
+       {},
+       "text",
+       "Demo Registrar Ltd"
+      ]
+     ]
+    ]
+   }
+  ],
+  "nameservers": [
+   {
+    "ldhName": "ns1.demo-secure.example"
+   }
+  ]
+ },
+ "demo-new.example": {
+  "ldhName": "DEMO-NEW.EXAMPLE",
+  "status": [
+   "client transfer prohibited"
+  ],
+  "events": [
+   {
+    "eventAction": "registration",
+    "eventDate": "2026-10-20T08:00:00Z"
+   },
+   {
+    "eventAction": "expiration",
+    "eventDate": "2027-10-20T08:00:00Z"
+   },
+   {
+    "eventAction": "last changed",
+    "eventDate": "2026-10-20T08:00:00Z"
+   }
+  ],
+  "entities": [
+   {
+    "roles": [
+     "registrar"
+    ],
+    "vcardArray": [
+     "vcard",
+     [
+      [
+       "version",
+       {},
+       "text",
+       "4.0"
+      ],
+      [
+       "fn",
+       {},
+       "text",
+       "Budget Registrar Inc"
+      ]
+     ]
+    ]
+   }
+  ],
+  "nameservers": [
+   {
+    "ldhName": "ns1.cheap-dns.example"
+   }
+  ]
+ }
+}
